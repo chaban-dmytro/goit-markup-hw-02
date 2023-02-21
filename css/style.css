@@ -31,6 +31,15 @@ body {
   font-family: var(--main-font);
   font-weight: 500;
   letter-spacing: 0.02em;
+  color: var(--navi-blue);
+}
+
+header,
+.menu,
+.menu-items,
+.header-items {
+  display: flex;
+  align-items: center;
 }
 
 .menu-link,
@@ -71,13 +80,11 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  color: var(--navi-blue);
 }
 
 .subtitle {
   font-size: 20px;
   line-height: 1.2;
-  color: var(--navi-blue);
 }
 
 .text {
@@ -88,7 +95,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -106,7 +113,7 @@ body {
 
 /* =======   HEARDER   ====== */
 
-.menu-items {
+.menu-link {
   font-size: 16px;
   line-height: 1.5;
   color: var(--navi-blue);
@@ -115,6 +122,8 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: var(--ocean);
+  border-bottom: 4px solid var(--ocean);
+  border-radius: 2px;
 }
 
 /* =======   HERO   ====== */
@@ -148,6 +157,22 @@ footer {
   font-size: 16px;
   line-height: 1.5;
   color: var(--cornflower);
+  width: 264px;
 }
 
+/* ----------------- PORTFOLIO ------------------------ */
 
+.portfolio-btn {
+  background-color: var(--could);
+  border: 1px solid #e7e9fc;
+  color: var(--iris);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 12px 24px;
+  box-shadow: none;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white);
+}
